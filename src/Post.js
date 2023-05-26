@@ -29,9 +29,9 @@ const Post = ({ post }) => {
             <h2>{post.title}</h2>
 
             <p className="info">
-              <a href="" className="author">
+              <span href="" className="author">
                 {post.createdBy.username}
-              </a>
+              </span>
               <time>{moment(post.createdAt).format('D MMM YYYY')}</time>
             </p>
             <p

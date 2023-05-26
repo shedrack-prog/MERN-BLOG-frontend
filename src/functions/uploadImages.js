@@ -8,8 +8,8 @@ export const uploadImages = async (formData, path, token) => {
       {
         headers: {
           Authorization: `Bearer ${token}`,
-          'content-type': 'multipart/form-data',
-          Accept: 'application/json',
+          'Content-Type': 'multipart/form-data',
+          Accept: '*/*',
         },
       }
     );
